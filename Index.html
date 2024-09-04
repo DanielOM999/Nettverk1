@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nettverk</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-wifi logo"></i>
+                    Nettverk
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hjem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#learn">Hva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="mainContainer">
+            <div class="overlay">
+                <h1 class="mHeader">Lær om Nettverk</h1>
+                <p class="mSubHeader">Grunnleggende nettverkskonsepter: IP, DHCP, DNS, ruter og switch</p>
+                <button class="startButton" onclick="location.href='#learn'">Start Now</button>
+            </div>
+        </div>
+        <div class="container" id="learn">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mt-5">
+                        <div class="HDVL">
+                            <div class="row">
+                                <div class="col-6 mt-5 text-top-space">
+                                    <h2>Hva du vil lære</h2>
+                                    <p>Etter at du har gått gjennom denne siden, vil du forhåpentligvis forstå de grunnleggende og essensielle innen nettverk.</p>
+                                    <p><i class="fa-solid fa-network-wired"></i> Du vil lære konseptene bak IP-adresse, DHCP og DNS.</p>
+                                    <p><img class="wifi-router" src="images/wifi-router.png"> I tillegg vil du lære hva en ruter og en switch er, og hvordan de fungerer i et nettverk.</p>
+                                </div>
+                                <div class="col-5 mt-5">
+                                    <img class="img-fluid img-round" src="images/i2.jpg" alt="a person sitting hiding behind some screens">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="HDVL">
+                        <div class="row">
+                            <div class="col-6 mt-5">
+                                <h2>IP-adresse</h2>
+                                <p>Hva er egentlig en IP-adresse? IP-adresse eller Internet Protocol address, kan beskrives som en unik ID som et ID kort for enheten din på nettet. Du kan tenke på det som en gate nummer. Altså som et Gate nummer hjelper deg å finne huset ditt hjelper IP-adressen enhetene med å finne hverandre på internett eller det lokale nettverket.</p>
+                                <p>IP-adressen er bygget opp av en rekke tall. Tallene er ikke satt sånn randomly, de er faktisk satt der for en grunn. De er satt opp sånn at hver bruker på internett har hver sin unike IP-adresse. Dette er avgjørende for at data som sendes over nettet skal komme til riktig destinasjon, enten det er en nettside du prøver å få tilgang til, eller en fil du laster ned.</p>
+                                <p>Dette er forklaringen for en offentlig IP-adressen. Forskjellen mellom en offentlig og privat IP-adresse er at en privat kan den være lik på flere lokale nettverk, men ikke på samme lokale nettverk. En offentlig IP-adresse er derimot helt unik for ditt lokale nettverk og hvor i verden den befinner seg.</p>
+                            </div>
+                            <div class="col-3 mt-5">
+                                <img class="img-fluid" src="images/ip1.png" alt="a person sitting hiding behind some screens">
+                            </div>
+                            <div class="col-3 mt-5">
+                                <img class="img-fluid" src="images/ip2.png" alt="a person sitting hiding behind some screens">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="HDVL">
+                        <div class="row">
+                            <div class="col-6 mt-5 text-top-space">
+                                <h2>Ruter</h2>
+                                <p>Hva er en ruter? En ruter er en enhet som kobler ditt lokale nettverk til internett. Et eksempel kan være at en ruter kobler ditt kontor eller hus til resten av verden. Den fungerer som en portvakt og bestemmer, basert på regler du setter, hvilken trafikk som får lov til å passere mellom nettverket ditt og resten av verden. Så når din datamaskin sender en forespørsel om å koble seg til VG.no vil forespørselen din sendes til Ruteren først. Så vil ruteren sende det ut på nettverket.</p>
+                            </div>
+                            <div class="col-5 mt-2">
+                                <img class="img-fluid" src="images/rout1.png" alt="a person sitting hiding behind some screens">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="HDVL">
+                        <div class="row">
+                            <div class="col-6 mt-5">
+                                <h2>Swich</h2>
+                                <p>Hva er en switch? En switch er en enhet som fordeler nettverkstrafikken internt i ditt lokale nettverk. Når du kobler til flere enheter med en nettverkskabel (Ethernet), sørger switchen for at dataen flyter effektivt mellom dem. Det finnes forskjellige typer swicher. Enkle switcher er brukervennlige og krever ingen innstillinger. Avanserte switcher har flere funksjoner som kan forbedre nettverkets sikkerhet og ytelse, som å forhindre nettverksproblemer (looping protection), prioritere viktig trafikk (QoS), dele opp nettverket (VLAN), og levere strøm gjennom nettverkskabler (PoE).</p>
+                            </div>
+                            <div class="col-5 mt-2">
+                                <img class="img-fluid" src="images/swich1.png" alt="a person sitting hiding behind some screens">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="HDVL">
+                        <div class="row">
+                            <div class="col-6 mt-5">
+                                <h2>DNS</h2>
+                                <p>Hva er DNS? DNS (Domain Name System) oversetter nettadresser som VG.no til IP-adresser som datamaskiner forstår. Når du skriver inn en URL, sjekker datamaskinen først om den allerede har IP-adressen lagret i sitt minne (chachen). Hvis ikke, sender den en forespørsel til en DNS-server, som er som en stor adressebok. Denne serveren kontakter en rotserver, som er som en hovedbok, og hovedboken ser da på URL-ens endelsen (.no, .com, .org osv.). Rotserveren sender forespørselen videre til en annen server som håndterer det domenet (VG.no). Når den riktige IP-adressen er funnet, sendes den tilbake til datamaskinen, som da kan koble til nettsiden. Dette skjer super raskt mens du venter på at siden loader.</p>
+                            </div>
+                            <div class="col-5 mt-5">
+                                <img class="img-fluid img-round" src="images/dns1.png" alt="a person sitting hiding behind some screens">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="HDVL">
+                        <div class="row">
+                            <div class="col-6 mt-5">
+                                <h2>DHCP</h2>
+                                <p>Hva er DHCP? DHCP (Dynamic Host Configuration Protocol) er en funksjon som ruteren din bruker for dynamisk gi hver enhet på ditt hjemmenettverk en unik IP-adresse. Når du kobler en enhet til nettverket ditt, gir DHCP-serveren, som burde være i ruteren (må ikke), den en IP-adresse automatisk. Det er som å gi hvert medlem av en stor fest et unikt deltaker ID, slik at alle vet hvem er hvem.</p>
+                            </div>
+                            <div class="col-5 mt-5">
+                                <img class="img-fluid img-round" src="images/dhcp1.jpg" alt="a person sitting hiding behind some screens">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="py-3 mt-4 bg-dark">
+            <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+            </li>
+            </ul>
+            <p class="text-center">&copy; 2024 Nettverk, Inc</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
